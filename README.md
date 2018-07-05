@@ -12,3 +12,11 @@ git add README.md
 git add git.md
 git commit -m 'first commit'
 ```
+
+## 版本回退
+
+```code
+git log // 查看提交历史
+git reflog // 查看操作历史
+git reset --hard commit_id
+```
