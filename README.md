@@ -12,3 +12,9 @@ git add README.md
 git add git.md
 git commit -m 'first commit'
 ```
+
+## 工作区和暂存区
+
++ 第一步是用 git add 把文件添加进去，实际上就是把文件修改添加到暂存区；
++ 第二步是用 git commit 提交更改，实际上就是把暂存区的所有内容提交到当前分支。
++ 使用 git status 查看
