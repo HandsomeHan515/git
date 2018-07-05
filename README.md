@@ -49,3 +49,13 @@ git push
 + 创建+切换分支：git checkout -b < name >
 + 合并某分支到当前分支：git merge < name >
 + 删除分支：git branch -d < name >
+
+## 标签操作
+
++ 命令 git tag < tagname >用于新建一个标签，默认为 HEAD，也可以指定一个 commit id；
++ 命令 git tag -a < tagname > -m "blablabla..."可以指定标签信息；
++ 命令 git tag 可以查看所有标签。
++ 命令 git push origin < tagname >可以推送一个本地标签；
++ 命令 git push origin --tags可以推送全部未推送过的本地标签；
++ 命令 git tag -d < tagname >可以删除一个本地标签；
++ 命令 git push origin :refs/tags/< tagname >可以删除一个远程标签。
