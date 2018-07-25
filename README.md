@@ -63,8 +63,8 @@ git push
 
 ## 当前工作未完成，临时切换到其他分支
 
-git stash 暂存当前未提交的内容
-git stash save "stash log" 暂存内容并提供描述信息
-git stash pop 将最后一个暂存的内容取出
-git stash list 查看所有暂存
-git stash pop [stash@{n}] 取出一个特定的暂存
++ git stash 暂存当前未提交的内容
++ git stash save "stash log" 暂存内容并提供描述信息
++ git stash pop 将最后一个暂存的内容取出
++ git stash list 查看所有暂存
++ git stash pop [stash@{n}] 取出一个特定的暂存
