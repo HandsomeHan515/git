@@ -78,6 +78,5 @@ git push
 + git bisect bad COMMIT-ID 设置一个已经出问题的版本
 + git bisect good COMMIT-ID 设置一个没有问题的版本
 + git bisect good|bad 持续的给结果，最后会定位到一个版本，结果跟方法二的类似
-
 4. git show :/KEY-WORD 查找关键信息的变更，这里给出的是一个大致信息，比如是在其他分支做出的改动
 5. git log -p -S "字符串" 查找字符串在整个提交历史的出现， -G "正则表达式"
