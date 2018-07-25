@@ -35,7 +35,7 @@ git init   把当前目录变成git可以管理的仓库
 
 也可以直接通过 git clone 命令来直接复制远程仓库到本地目录
 git clone git@git.coding.net:xiaocuo/test.git mywork
-上述命令将在当前位置新建一个名为“mywork”的文件夹，内容为远程test项目中的文件
+上述命令将在当前位置新建一个名为 “mywork” 的文件夹，内容为远程 test 项目中的文件
 
 ## 代码 提交
 
