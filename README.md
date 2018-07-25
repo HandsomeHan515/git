@@ -68,3 +68,16 @@ git push
 + git stash pop 将最后一个暂存的内容取出
 + git stash list 查看所有暂存
 + git stash pop [stash@{n}] 取出一个特定的暂存
+
+## 查找某处变更是哪次提交生成的（bug是谁在什么时候写的~）
+
+1. git blame FILE-NAME -L m,n 查看m到n行之间的最后一次变更的信息
+2. git log -L m,n:FILE-NAME    查看文件的m到n行之间的变化
+3. 
++ git bisect start 开始一个二分查找
++ git bisect bad COMMIT-ID 设置一个已经出问题的版本
++ git bisect good COMMIT-ID 设置一个没有问题的版本
++ git bisect good|bad 持续的给结果，最后会定位到一个版本，结果跟方法二的类似
+
+4. git show :/KEY-WORD 查找关键信息的变更，这里给出的是一个大致信息，比如是在其他分支做出的改动
+5. git log -p -S "字符串" 查找字符串在整个提交历史的出现， -G "正则表达式"
