@@ -59,3 +59,10 @@ git push
 + 命令 git push origin --tags可以推送全部未推送过的本地标签；
 + 命令 git tag -d < tagname >可以删除一个本地标签；
 + 命令 git push origin :refs/tags/< tagname >可以删除一个远程标签。
+
+## 当前工作未完成，临时切换到其他分支
+
+```
+git stash 暂存当前未提交的内容
+git stash save 'stash log' 暂存内容并提供描述信息
+```
