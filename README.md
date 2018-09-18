@@ -85,8 +85,8 @@ git push
 
 ### 重命名本地分支
 
-1.git branch -m new-name # 如果当前在重命名的分支
-2.git branch -m old-name new-name # 如果当前不在重命名的分支
+1. git branch -m new-name # 如果当前在重命名的分支
+2. git branch -m old-name new-name # 如果当前不在重命名的分支
 
 ### 删除远程旧名称分支并且 push 新名称分支
 1. git push origin :old-name new-name
