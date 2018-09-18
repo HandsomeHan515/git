@@ -80,3 +80,16 @@ git push
 + git bisect good|bad 持续的给结果，最后会定位到一个版本，结果跟方法二的类似
 4. git show :/KEY-WORD 查找关键信息的变更，这里给出的是一个大致信息，比如是在其他分支做出的改动
 5. git log -p -S "字符串" 查找字符串在整个提交历史的出现， -G "正则表达式"
+
+## 给本地和远程仓库重命名
+
+### 重命名本地分支
+
+1.git branch -m new-name # 如果当前在重命名的分支
+2.git branch -m old-name new-name # 如果当前不在重命名的分支
+
+### 删除远程旧名称分支并且 push 新名称分支
+1. git push origin :old-name new-name
+
+### 关联新名称的本地分支和远程分支
+1. git push origin -u new name
