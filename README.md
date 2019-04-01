@@ -93,3 +93,6 @@ git push
 
 ### 关联新名称的本地分支和远程分支
 1. git push origin -u new name
+
+## 删除远程分支
+1. git push origin --delete branch-name
